@@ -1,0 +1,14 @@
+.hero{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 80px 20px;
+}
+
+.myName{
+    color: var(--accent);
+}
+
+.hero h1{
+    max-width: 650px;
+    line-height: 1.2;
+}
