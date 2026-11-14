@@ -12,3 +12,31 @@
     max-width: 650px;
     line-height: 1.2;
 }
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    margin: 10px;
+    transition: background-color 0.3 ease-in-out,
+    border-color 0.3 ease-in-out,
+    color 0.3 ease-in-out;
+}
+.btn-primary{
+    background-color: var(--accent);
+    color: var(--bg-primary);
+}
+.btn-secondary{
+    color: var(--text-primary);
+}
+.btn-primary:hover{
+    background-color: #2F7659;
+    border-color: #2F7659;
+    color: var(--text-primary);
+}
+.btn-secondary:hover{
+    background-color: #1D3B32;
+    border-color: #1D3B32;
+}

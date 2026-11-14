@@ -9,8 +9,8 @@ function Hero() {
         Enterprise integrations, APIs, conversational AI, and a growing
         portfolio of full-stack applications
       </p>
-      <a href="#projects">View Projects</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#projects" className="btn btn-primary">View Projects</a>
+      <a href="#contact" className="btn btn-secondary">Contact Me</a>
     </section>
   );
 }
