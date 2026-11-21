@@ -1,29 +1,24 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-  --bg-primary: #111418;
-  --bg-secondary: #20262B;
-  --accent: #60B995;
-  --text-primary: #F4F6F5;
-  --text-secondary: #A9B3B0;
-  --border-color: #343C41;
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap");
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+:root {
+  --bg-primary: #111912;
+  --bg-secondary: #202c20;
+  --accent: #b9d67b;
+  --accent-secondary: #c17c4d;
+  --accent-pink: #e8b0b9;
+  --text-primary: #f2ebdd;
+  --text-secondary: #a9b2a3;
+  --border-color: #343f34;
+
+  --sans: "DM Sans", sans-serif;
+  --heading: "DM Sans", sans-serif;
+  --serif: "Instrument Serif", serif;
+  --mono: "DM Mono", monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
+  color-scheme: dark;
+  color: var(--text-primary);
   background: var(--bg-primary);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,20 +30,32 @@
   }
 }
 
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  min-width: 320px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--sans);
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 #root {
-  width: 1126px;
   max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,
@@ -79,17 +86,5 @@ p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
-}
+

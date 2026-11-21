@@ -3,14 +3,25 @@ import "./Hero.css";
 function Hero() {
   return (
     <section id="home" className="hero">
-      <p className="myName">Hi, Im BriAnna</p>
-      <h1>Building software that connect systems and solves problems</h1>
-      <p>
-        Enterprise integrations, APIs, conversational AI, and a growing
-        portfolio of full-stack applications
-      </p>
-      <a href="#projects" className="btn btn-primary">View Projects</a>
-      <a href="#contact" className="btn btn-secondary">Contact Me</a>
+      <div className="hero-content">
+        <p className="hero-label">Athlete × Creative × Developer</p>
+        <h1 className="hero-title">
+          Built to
+          <br />
+          <span className="hero-accent">envolve.</span>
+        </h1>
+
+        <p className="hero-description">
+          Software engineering student. Integration professional. Naturally
+          curious, creatively driven, and always building.
+        </p>
+      </div>
+      <a href="#projects" className="btn btn-primary">
+        View Projects
+      </a>
+      <a href="#contact" className="btn btn-secondary">
+        Contact Me
+      </a>
     </section>
   );
 }
