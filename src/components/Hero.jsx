@@ -1,6 +1,12 @@
 import "./Hero.css";
+import { useState } from "react";
 
 function Hero() {
+  const [shotCount, setShotCount] = useState(0);
+  function incrementShotCount() {
+    setShotCount((previousCount) => previousCount + 1);
+  }
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -17,8 +23,16 @@ function Hero() {
         </p>
       </div>
       <div className="hero-visual">
-        <button className="basketball" type="button">Take A Shot</button>
+        <button
+          className="basketball"
+          type="button"
+          onClick={incrementShotCount}
+        >
+          <span className="basketball-label">Take A Shot</span>
+        </button>
+        <p className="basketball-shot-count">Shots: {shotCount}</p>
       </div>
+
       <a href="#projects" className="btn btn-primary">
         View Projects
       </a>
