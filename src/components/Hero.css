@@ -2,6 +2,23 @@
   background-color: var(--bg-primary);
   color: var(--text-primary);
   padding: 80px 20px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero-visual{
+  position: absolute;
+  top: 30%;
+  right: 8%;
+}
+
+.basketball{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--accent-secondary);
+  border: none;
+  cursor: pointer;
 }
 
 .myName {

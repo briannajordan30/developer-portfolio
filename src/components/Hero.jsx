@@ -16,6 +16,9 @@ function Hero() {
           curious, creatively driven, and always building.
         </p>
       </div>
+      <div className="hero-visual">
+        <button className="basketball" type="button">Take A Shot</button>
+      </div>
       <a href="#projects" className="btn btn-primary">
         View Projects
       </a>
