@@ -8,7 +8,7 @@ function Hero() {
         <h1 className="hero-title">
           Built to
           <br />
-          <span className="hero-accent">envolve.</span>
+          <span className="hero-accent">evolve.</span>
         </h1>
 
         <p className="hero-description">
